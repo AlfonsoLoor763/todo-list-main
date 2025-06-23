@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <h1>Mi Lista de Tareas</h1>
+  <p>Nombre del estudiante: Alfonso Loor </p>
+  <form id="formularioTarea" novalidate>
+    <label for="nombre">Nombre de la tarea:</label>
+    <input type="text" id="nombre" name="nombre" maxlength="25" required>
+
+    <label for="fecha">Fecha de entrega:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="" disabled selected hidden>Seleccione un tipo</option>
+      <option value="Universidad">Universidad</option>
+      <option value="Personal">Personal</option>
+      <option value="Trabajo">Trabajo</option>
+      <option value="Hobby">Hobby</option>
+    </select>
+
+    <fieldset>
+      <legend>Prioridad:</legend>
+      <label><input type="radio" name="prioridad" value="Urgente" required> Urgente </label>
+      <label><input type="radio" name="prioridad" value="Normal"> Normal </label>
+      <label><input type="radio" name="prioridad" value="Baja"> Baja 💤</label>
+    </fieldset>
+
+    <button type="submit"> Agregar tarea</button>
+  </form>
+
+  <section id="listaTareas">
+    <h2> Mis tareas</h2>
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
