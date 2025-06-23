@@ -7,13 +7,9 @@ body {
     margin: auto;
   }
   
-  h1 {
+  h1, h2 {
     color: #2E4633;
     text-align: center;
-  }
-  h2 {
-    color: #2E4633;
-    text-align: left;
   }
   
   form {
