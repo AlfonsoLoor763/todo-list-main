@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const prioridadSeleccionada = formulario.querySelector('input[name="prioridad"]:checked');
   
       if (!nombre || !fecha || !tipo || !prioridadSeleccionada) {
-        alert('Por favor, completa todos los campos obligatorios.');
+        alert('Por favor, completa !!todos los campos obligatorios¡¡.');
         return;
       }
   
